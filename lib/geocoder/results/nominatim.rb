@@ -8,6 +8,11 @@ module Geocoder::Result
       return nil
     end
 
+    def extratags
+      return @data['extratags'] if @data['extratags']
+      return nil
+    end
+
     def house_number
       @data['address']['house_number']
     end
